@@ -1,0 +1,35 @@
+
+ <!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<style>
+    body {
+    margin: 0;
+}
+iframe {
+width: 100%;
+height: 100vh;
+border: none;
+}
+</style>
+<div id="placeholder"></div>
+
+<script id="iframeTemplate" type="text/html">
+    <iframe src="https://smartbio.link/buahsayur">
+        <!-- replace this line with alternate content -->
+    </iframe>
+</script>
+
+<script type="text/javascript">
+var element,
+    html,
+    template;
+
+element = document.getElementById("placeholder");
+template = document.getElementById("iframeTemplate");
+html = template.innerHTML;
+
+element.innerHTML = html;
+</script>
+</html>
