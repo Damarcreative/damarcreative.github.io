@@ -15,10 +15,16 @@ border: none;
 </style>
 <div id="placeholder"></div>
 
-<script id="iframeTemplate" type="text/html">
+<script id="myiFrame" type="text/html">
     <iframe src="https://smartbio.link/buahsayur">
         <!-- replace this line with alternate content -->
     </iframe>
+    
+    window.onload = function() {
+   let myiFrame = document.getElementById("myiFrame");
+   let doc = myiFrame.contentDocument;
+   doc.body.innerHTML = doc.body.innerHTML + '<style>/******* Put your styles here *******</style>';
+}
 </script>
 
 
