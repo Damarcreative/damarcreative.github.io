@@ -1,0 +1,89 @@
+
+.bglink-ood {
+    background-color: #8E6F57;
+}
+.bglink-even {
+    background-color: #C8A587;
+}
+
+.linktree {
+    width: 100%;
+}
+.linktree-header {
+    height: auto;
+    position: relative;
+}
+.linktree-main {}
+.galeria-trends-center {
+    text-align: center;
+}
+.galeria-trends-rounded {
+    border-radius: 50%;
+}
+
+.author {
+    object-fit: cover;
+    width: 190px;
+    height: 190px;
+}
+
+.galeria-trends-name h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    padding: 3px;
+    margin: 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.galeria-trends-about p {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.galeria-trends-links {
+    padding-top: 50px;
+    position: absolute;
+    width: 90%;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.galeria-trends-link {
+    opacity: 1;
+    margin-bottom: 60px;
+    font-size: 20px;
+    width: 90%;
+    color: #fff;
+    padding: 2px 0px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+
+    
+}
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1024px) {
+
+}
+
