@@ -232,8 +232,10 @@
 
             .canvas-center {
                 padding-top: 20px;
-                padding-bottom: 100px;
-                align-items: center !important;
+                padding-bottom: 120px;
+                /* Increased bottom padding */
+                align-items: flex-start !important;
+                /* Changed from center to flex-start */
                 overflow-y: auto;
                 overflow-x: hidden;
             }
@@ -345,7 +347,8 @@
             </div>
         </div>
 
-        <div id="about" class="section-container flex-col items-center justify-center max-w-4xl mx-auto w-full">
+        <div id="about"
+            class="section-container flex-col items-center justify-start md:justify-center pt-24 pb-24 md:pt-0 max-w-4xl mx-auto w-full">
             <div
                 class="relative w-full p-8 border border-dashed border-gray-700 rounded-xl bg-gray-900/50 backdrop-blur-sm parallax-layer">
                 <div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-teal-500"></div>
@@ -462,7 +465,8 @@
             </div>
         </div>
 
-        <div id="work" class="section-container flex-col items-center justify-center max-w-3xl mx-auto w-full">
+        <div id="work"
+            class="section-container flex-col items-center justify-start md:justify-center pt-24 md:pt-0 max-w-3xl mx-auto w-full">
             <div class="parallax-layer">
                 <h2
                     class="text-3xl font-bold mb-8 text-center text-pink-500 font-mono tracking-tighter border-b border-gray-800 pb-4 inline-block px-8">
@@ -498,7 +502,8 @@
             </div>
         </div>
 
-        <div id="contact" class="section-container flex-col items-center justify-center w-full">
+        <div id="contact"
+            class="section-container flex-col items-center justify-start md:justify-center pt-24 md:pt-0 w-full">
             <div class="parallax-layer max-w-2xl w-full">
                 <div
                     class="relative bg-gray-900/60 backdrop-blur-md border border-gray-800 rounded-2xl overflow-hidden">
