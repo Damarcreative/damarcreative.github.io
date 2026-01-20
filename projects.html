@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Projects | DamarCreative</title>
+
+    <meta name="description"
+        content="Discover the portfolio of Damar Jati. A collection of UI/UX design and Front-End development projects, featuring LUI, Color Picker, and more.">
+    <meta name="keywords"
+        content="Projects, Portfolio, UI/UX Design, Front-End Development, Case Studies, Web Applications, GitHub">
+    <meta name="author" content="Damar Jati">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damarcreative.com/projects.html">
+    <meta property="og:title" content="Projects | DamarCreative">
+    <meta property="og:description" content="Explore the design and coding projects of Damar Jati.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | DamarCreative">
+    <meta name="twitter:description" content="Explore the design and coding projects of Damar Jati.">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-circle"></div>
+                <span class="logo-text">DamarCreative</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="resource.html" class="nav-link">Resource</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-location">
+                <div><span class="location-text">Grobogan, Central Java</span> <span id="clock" class="clock">--:--
+                        WIB</span></div>
+                <div class="country">Indonesia</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <h1 class="page-title">
+                <svg class="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.21 204.21">
+                    <g fill="currentColor">
+                        <rect x="82.1" width="40" height="204.21" />
+                        <rect x="82.1" y="0" width="40" height="204.21"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                        <rect x="0" y="82.1" width="204.21" height="40" />
+                        <rect x="0" y="82.1" width="204.21" height="40"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                    </g>
+                </svg>PROJECTS<span class="accent">.</span>
+            </h1>
+
+            <div id="projects-container"></div>
+            <script type="application/json" id="projects-data">
+                [
+                    {
+                        "year": "2026",
+                        "title": "LUI",
+                        "description": "A web-based Linux desktop environment built with Node.js, Vanilla JS, and Vite. Features a multitasking interface, window manager, and lightweight virtual file system.",
+                        "links": [{"label": "Source", "url": "https://github.com/Damarcreative/LUI"}],
+                        "skills": ["JavaScript", "desktop-environment", "linux", "webui"]
+                    },
+                    {
+                        "year": "2025",
+                        "title": "CodeSheek",
+                        "description": "CodeSheek is an AI-powered code generation tool that utilizes the Deepseek API to automatically create complete web projects. Just provide a description and get ready-to-use code!",
+                        "links": [
+                            {"label": "Source", "url": "https://github.com/Damarcreative/CodeSheek"}
+                        ],
+                        "skills": ["Python", "ai", "api", "deepseek"]
+                    },
+                    {
+                        "year": "2025",
+                        "title": "Color Picker",
+                        "description": "A beautiful, responsive color picker web application with HEX, RGB, and HSL values. Explore curated color palettes and copy colors with one click.",
+                        "links": [
+                             {"label": "Preview", "url": "https://damarcreative.github.io/color-picker/"},
+                            {"label": "Source", "url": "https://github.com/Damarcreative/color-picker"}
+                        ],
+                        "skills": ["JavaScript", "color", "color-picker", "html"]
+                    },
+                    {
+                        "year": "2025",
+                        "title": "Qr Code Tools",
+                        "description": "A static web application for generating and scanning QR codes, built with HTML, CSS, and JavaScript. No server-side required.",
+                        "links": [
+                             {"label": "Preview", "url": "https://damarcreative.github.io/qr-code-tools/"},
+                            {"label": "Source", "url": "https://github.com/Damarcreative/qr-code-tools"}
+                        ],
+                        "skills": ["JavaScript", "open-source", "qr", "qrcode"]
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Streetwear Flux",
+                        "description": "Text-to-image stable-diffusion Flux lora model.",
+                        "links": [],
+                        "skills": ["diffusers", "text-to-image", "stable-diffusion", "Flux"]
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Rem Wm",
+                        "description": "Watermark remover tool that leverages the capabilities of Microsoft Florence and Lama Cleaner models.",
+                        "links": [
+                            {"label": "Preview", "url": "https://huggingface.co/spaces/DamarJati/Remove-watermark"},
+                            {"label": "Source", "url": "https://github.com/Damarcreative/rem-wm"}
+                        ],
+                        "skills": ["Python", "florence-2", "lama-cleaner", "watermark"]
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Bot Discord Animagine",
+                        "description": "Bot Discord AnimagineXL: Generate images from text prompts with customizable parameters using Stable Diffusion.",
+                        "links": [{"label": "Source", "url": "https://github.com/Damarcreative/Bot-Discord-Animagine"}],
+                        "skills": ["Python"]
+                    },
+                    {
+                        "year": "2023",
+                        "title": "Secure Upload",
+                        "description": "Remove adult content in discord channels better with Artificial Intelligence.",
+                        "links": [{"label": "Source", "url": "https://github.com/Damarcreative/secure-upload"}],
+                        "skills": ["Python", "bot-discord", "discord", "huggingface"]
+                    },
+                    {
+                        "year": "2023",
+                        "title": "Nightcore Radio",
+                        "description": "A simple Discord bot uses python to play musk in a voice channel 24/7 together.",
+                        "links": [{"label": "Source", "url": "https://github.com/Damarcreative/Nightcore-Radio"}],
+                        "skills": ["Python", "discord", "discord-bot", "music-bot"]
+                    },
+                    {
+                        "year": "2023",
+                        "title": "NSFW Filterization DecentScan",
+                         "description": "Image-classification transformers model.",
+                        "links": [],
+                        "skills": ["transformers", "pytorch", "swin"]
+                    },
+                    {
+                        "year": "2023",
+                        "title": "Word Etiquette",
+                        "description": "No description available.",
+                        "links": [{"label": "Source", "url": "https://github.com/Damarcreative/Word-Etiquette"}],
+                        "skills": ["Python"]
+                    }
+                ]
+            </script>
+        </main>
+    </div>
+
+    <footer id="footer-marquee"></footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

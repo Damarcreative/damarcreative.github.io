@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Resources | DamarCreative</title>
+
+    <meta name="description"
+        content="Explore a curated list of design resources, AI models, datasets, and repositories by Damar Jati. Hugging Face models, GitHub repos, and more.">
+    <meta name="keywords"
+        content="Resources, AI Models, Datasets, GitHub Repositories, Design Resources, Hugging Face, Open Source">
+    <meta name="author" content="Damar Jati">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damarcreative.com/resource.html">
+    <meta property="og:title" content="Resources | DamarCreative">
+    <meta property="og:description"
+        content="Explore a curated list of design resources, AI models, datasets, and repositories by Damar Jati.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resources | DamarCreative">
+    <meta name="twitter:description"
+        content="Explore a curated list of design resources, AI models, datasets, and repositories.">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-circle"></div>
+                <span class="logo-text">DamarCreative</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resource.html" class="nav-link active">Resource</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-location">
+                <div><span class="location-text">Grobogan, Central Java</span> <span id="clock" class="clock">--:--
+                        WIB</span></div>
+                <div class="country">Indonesia</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <h1 class="page-title">
+                <svg class="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.21 204.21">
+                    <g fill="currentColor">
+                        <rect x="82.1" width="40" height="204.21" />
+                        <rect x="82.1" y="0" width="40" height="204.21"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                        <rect x="0" y="82.1" width="204.21" height="40" />
+                        <rect x="0" y="82.1" width="204.21" height="40"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                    </g>
+                </svg>RESOURCES<span class="accent">.</span>
+            </h1>
+
+            <div id="resource-container"></div>
+
+            <script type="application/json" id="resource-data">
+                {
+                    "models": [
+                        { "id": "DamarJati/plastic-recycling-codes", "tags": ["image-classification", "transformers"], "date": "29 Sep 2023" },
+                        { "id": "DamarJati/GreenLabel-Waste-Types", "tags": ["image-classification", "transformers"], "date": "30 Sep 2023" },
+                        { "id": "DamarJati/NSFW-Filterization-DecentScan", "tags": ["image-classification", "transformers"], "date": "01 Oct 2023" },
+                        { "id": "DamarJati/Face-Mask-Detection", "tags": ["image-classification", "transformers"], "date": "04 Oct 2023" },
+                        { "id": "DamarJati/face-hand-YOLOv5", "tags": ["object-detection", "yolov5"], "date": "16 Nov 2023" },
+                        { "id": "DamarJati/streetwear-flux", "tags": ["text-to-image", "flux", "lora"], "date": "27 Aug 2024" }
+                    ],
+                    "datasets": [
+                        { "id": "DamarJati/Ind-3166-1", "tags": ["text", "csv"], "date": "09 Sep 2023" },
+                        { "id": "DamarJati/IND-number-plate", "tags": ["image", "classification"], "date": "29 Sep 2023" },
+                        { "id": "DamarJati/GreenLabel-Waste-Types", "tags": ["image", "classification"], "date": "29 Sep 2023" },
+                        { "id": "DamarJati/NSFW-filter-DecentScan", "tags": ["image", "nsfw"], "date": "01 Oct 2023" },
+                        { "id": "DamarJati/Face-Mask-Detection", "tags": ["image", "face mask"], "date": "04 Oct 2023" },
+                        { "id": "DamarJati/face-hands-YOLOv5", "tags": ["object-detection"], "date": "16 Nov 2023" },
+                        { "id": "DamarJati/indocorpus-mix", "tags": ["text", "corpus"], "date": "12 Feb 2024" },
+                        { "id": "DamarJati/indocorpus-sastra", "tags": ["text", "literature"], "date": "12 Feb 2024" }
+                    ],
+                    "repos": [
+                         { "name": "2048-level", "html_url": "https://github.com/Damarcreative/2048-level", "description": "Modified 2048 with levels.", "language": "CSS", "date": "25 Dec 2025" },
+                         { "name": "anime-tts", "html_url": "https://github.com/Damarcreative/anime-tts", "description": "Medium-sized Japanese language model for immersive text-to-speech.", "language": "Jupyter Notebook", "date": "12 Nov 2023" },
+                         { "name": "auto-annotation-YOLOv5", "html_url": "https://github.com/Damarcreative/auto-annotation-YOLOv5", "description": "Simplify the annotation process using pre-trained models.", "language": "Jupyter Notebook", "date": "15 Nov 2023" },
+                         { "name": "Bot-Discord-Animagine", "html_url": "https://github.com/Damarcreative/Bot-Discord-Animagine", "description": "Bot Discord AnimagineXL: Generate images from text prompts.", "language": "Python", "date": "16 Jun 2024" },
+                         { "name": "CodeSheek", "html_url": "https://github.com/Damarcreative/CodeSheek", "description": "AI-powered code generation tool utilizing Deepseek API.", "language": "Python", "date": "10 Apr 2025" },
+                         { "name": "LUI", "html_url": "https://github.com/Damarcreative/LUI", "description": "Web-based Linux desktop environment.", "language": "JavaScript", "date": "14 Jan 2026" },
+                         { "name": "Nightcore-Radio", "html_url": "https://github.com/Damarcreative/Nightcore-Radio", "description": "Simple Discord bot to play music.", "language": "Python", "date": "28 Jun 2023" },
+                         { "name": "openjourney-inference", "html_url": "https://github.com/Damarcreative/openjourney-inference", "description": "Python script for OpenJourney models with diffusers library.", "language": "Jupyter Notebook", "date": "24 Nov 2023" },
+                         { "name": "qr-code-tools", "html_url": "https://github.com/Damarcreative/qr-code-tools", "description": "Static web app for generating and scanning QR codes.", "language": "JavaScript", "date": "29 Mar 2025" },
+                         { "name": "rem-wm", "html_url": "https://github.com/Damarcreative/rem-wm", "description": "Watermark remover tool leveraging Microsoft Florence and Lama Cleaner.", "language": "Python", "date": "19 Jul 2024" },
+                         { "name": "Remove-background", "html_url": "https://github.com/Damarcreative/Remove-background", "description": "Removing the background with the rembg library", "language": "Python", "date": "07 Feb 2023" },
+                         { "name": "sd-tagger", "html_url": "https://github.com/Damarcreative/sd-tagger", "description": "Effortlessly annotate images for stable diffusion.", "language": "Jupyter Notebook", "date": "14 Nov 2023" },
+                         { "name": "secure-upload", "html_url": "https://github.com/Damarcreative/secure-upload", "description": "Remove adult content in discord channels with AI.", "language": "Python", "date": "03 Oct 2023" }
+                    ]
+                }
+            </script>
+        </main>
+    </div>
+
+    <footer id="footer-marquee"></footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
