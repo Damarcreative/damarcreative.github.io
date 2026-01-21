@@ -65,6 +65,9 @@ function renderFooterMarquee() {
       <div>
         <p>Thoughtful UI. Powerful Code.</p>
       </div>
+       <div>
+        <p>© 2026 Damar Jati. All rights reserved.</p>
+      </div>
       <div class="footer-right">
         <p>Grobogan, Central Java - Indonesia</p>
       </div>
@@ -338,3 +341,4 @@ document.addEventListener('DOMContentLoaded', () => {
     renderAbout();
     renderResources();
 });
+
