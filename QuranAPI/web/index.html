@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Quran API | DamarCreative</title>
+
+    <meta name="description"
+        content="Quran API, a high-performance, open-source Quran API built for developers. Fast, reliable, and free for the Ummah.">
+    <meta name="keywords"
+        content="Quran API, Quran, API, Quran API, Quran API, Quran API, Quran API, Quran API, Quran API, Quran API">
+    <meta name="author" content="Damar Jati">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damarcreative.com/">
+    <meta property="og:title" content="Quran API | DamarCreative">
+    <meta property="og:description"
+        content="Quran API, a high-performance, open-source Quran API built for developers. Fast, reliable, and free for the Ummah.">
+    <meta property="og:image"
+        content="https://repository-images.githubusercontent.com/1140659147/b026f7c3-230c-4a7b-b9d9-c5c6103a559e">
+    <meta property="og:image:alt" content="Quran API Preview">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://damarcreative.com/">
+    <meta name="twitter:title" content="Quran API | DamarCreative">
+    <meta name="twitter:description"
+        content="Quran API, a high-performance, open-source Quran API built for developers. Fast, reliable, and free for the Ummah.">
+    <meta name="twitter:image"
+        content="https://repository-images.githubusercontent.com/1140659147/b026f7c3-230c-4a7b-b9d9-c5c6103a559e">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="hero-wrapper">
+        <header>
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-circle"></div>
+                <span class="logo-text">DamarCreative</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="quran.html" class="nav-link">Quran</a>
+                <a href="docs.html" class="nav-link">API Docs</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <div class="mobile-social-links">
+                    <a href="https://damarcreative.my.id/" target="_blank" class="social-link" aria-label="Portfolio">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Damarcreative" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://huggingface.co/Damarjati" target="_blank" class="social-link"
+                        aria-label="HuggingFace">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12h.01"></path>
+                            <path d="M15 12h.01"></path>
+                            <path d="M10 16a3.5 3.5 0 0 0 4 0"></path>
+                            <path
+                                d="M20.4 14a8 8 0 0 0-1.7-5.3 7 7 0 0 0-3.2-3.2 8.3 8.3 0 0 0-3.5-.5c-3.7 0-6.9 2.1-8.5 5.2a8 8 0 0 0-.5 3.8 8.4 8.4 0 0 0 1.2 3.6 8 8 0 0 0 .5 3.8c1.6 3.1 4.8 5.2 8.5 5.2 1.2 0 2.4-.2 3.5-.5a7 7 0 0 0 3.2-3.2 8 8 0 0 0 1.7-5.3">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="header-location">
+                <div><span class="location-text">City, Province</span> <span id="clock" class="clock">--:--</span>
+                </div>
+                <div class="country">Country</div>
+            </div>
+        </header>
+
+        <main class="hero-main">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    DIGITAL<br>
+                    QURAN FOR<br>
+                    <span class="accent">EVERYONE.</span>
+                </h1>
+                <div class="hero-footer-row">
+                    <p class="hero-description">
+                        A high-performance, open-source Quran API built for developers. Fast, reliable, and free for the
+                        Ummah.
+                    </p>
+                    <div class="hero-cta" style="display: flex; gap: 1rem;">
+                        <a href="quran.html" class="btn-primary">Read Quran</a>
+                        <a href="docs.html" class="btn-primary"
+                            style="background: transparent; border-color: var(--text-color); color: var(--text-color);">API
+                            Docs</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer-marquee"></footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Damar Jati">
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damarcreative.com/">
+    <meta property="og:title" content="Quran API | DamarCreative">
+    <meta property="og:description"
+        content="Quran API, a high-performance, open-source Quran API built for developers. Fast, reliable, and free for the Ummah.">
+    <meta property="og:image"
+        content="https://repository-images.githubusercontent.com/1140659147/b026f7c3-230c-4a7b-b9d9-c5c6103a559e">
+    <meta property="og:image:alt" content="Quran API Preview">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://damarcreative.com/">
+    <meta name="twitter:title" content="Quran API | DamarCreative">
+    <meta name="twitter:description"
+        content="Quran API, a high-performance, open-source Quran API built for developers. Fast, reliable, and free for the Ummah.">
+    <meta name="twitter:image"
+        content="https://repository-images.githubusercontent.com/1140659147/b026f7c3-230c-4a7b-b9d9-c5c6103a559e">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <title>API Docs | DamarCreative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-circle"></div>
+                <span class="logo-text">DamarCreative</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="quran.html" class="nav-link">Quran</a>
+                <a href="docs.html" class="nav-link active">API Docs</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <div class="mobile-social-links">
+                    <a href="https://damarcreative.my.id/" target="_blank" class="social-link" aria-label="Portfolio">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Damarcreative" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://huggingface.co/Damarjati" target="_blank" class="social-link"
+                        aria-label="HuggingFace">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12h.01"></path>
+                            <path d="M15 12h.01"></path>
+                            <path d="M10 16a3.5 3.5 0 0 0 4 0"></path>
+                            <path
+                                d="M20.4 14a8 8 0 0 0-1.7-5.3 7 7 0 0 0-3.2-3.2 8.3 8.3 0 0 0-3.5-.5c-3.7 0-6.9 2.1-8.5 5.2a8 8 0 0 0-.5 3.8 8.4 8.4 0 0 0 1.2 3.6 8 8 0 0 0 .5 3.8c1.6 3.1 4.8 5.2 8.5 5.2 1.2 0 2.4-.2 3.5-.5a7 7 0 0 0 3.2-3.2 8 8 0 0 0 1.7-5.3">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <div class="header-location">
+                <div><span class="location-text">City, Province</span> <span id="clock" class="clock">--:--</span></div>
+                <div class="country">Country</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <h1 class="page-title">
+                <svg class="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.21 204.21">
+                    <g fill="currentColor">
+                        <rect x="82.1" width="40" height="204.21" />
+                        <rect x="82.1" y="0" width="40" height="204.21"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                        <rect x="0" y="82.1" width="204.21" height="40" />
+                        <rect x="0" y="82.1" width="204.21" height="40"
+                            transform="translate(-42.29 102.1) rotate(-45)" />
+                    </g>
+                </svg>DOCs<span class="accent">.</span>
+            </h1>
+
+            <div class="about-grid">
+                <div class="about-intro">
+                    <p>Designed for developers who need a reliable, high-performance, and easy-to-use Quran Data source.
+                        Built with In-Memory Caching technology for blazing fast response times.</p>
+
+                    <p>Whether you are building a mobile app, web application, or analysis tool, our API provides clean
+                        JSON data for all 114 Surahs, including multiple translations and Arabic text.</p>
+
+                    <p>Base URL:<br> <code
+                            style="color: var(--accent-green); font-size: 1rem;">https://quran-api.damarcreative.my.id/api</code>
+                    </p>
+                </div>
+
+                <div>
+                    <!-- Endpoint 1 -->
+                    <div class="list-item">
+                        <h3>List All Surahs</h3>
+                        <p>Retrieve metadata for all 114 Surahs.</p>
+                        <div class="endpoint-box">
+                            <span class="method">GET</span> /surah
+                        </div>
+                        <details class="response-dropdown">
+                            <summary>Sample Response (JSON)</summary>
+                            <div class="endpoint-box response-content">
+                                <pre style="margin: 0; white-space: pre-wrap;"><code>{
+  "status": "success",
+  "count": 114,
+  "data": [
+    {
+      "number": 1,
+      "name": "Al-Fatihah",
+      "name_ar": "الفاتحة",
+      "type": "Meccan",
+      "total_ayahs": 7
+    },
+    ...
+  ]
+}</code></pre>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Endpoint 2 -->
+                    <div class="list-item">
+                        <h3>Get Arabic Text</h3>
+                        <p>Fetch the Utmani Script for a specific Surah.</p>
+                        <div class="endpoint-box">
+                            <span class="method">GET</span> /surah/{number}/arabic
+                        </div>
+                        <details class="response-dropdown">
+                            <summary>Sample Response (JSON)</summary>
+                            <div class="endpoint-box response-content">
+                                <pre style="margin: 0; white-space: pre-wrap;"><code>{
+  "status": "success",
+  "data": {
+    "surah": 1,
+    "ayahs": [
+      {
+        "number": 1,
+        "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+      },
+      ...
+    ]
+  }
+}</code></pre>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Endpoint 3 -->
+                    <div class="list-item">
+                        <h3>Get Translation</h3>
+                        <p>Fetch translation in various languages (e.g., en-sahih, id-indonesian).</p>
+                        <div class="endpoint-box">
+                            <span class="method">GET</span> /surah/{number}/{edition}
+                        </div>
+                        <details class="response-dropdown">
+                            <summary>Sample Response (JSON)</summary>
+                            <div class="endpoint-box response-content">
+                                <pre style="margin: 0; white-space: pre-wrap;"><code>{
+  "status": "success",
+  "data": {
+    "surah": 1,
+    "translation": "en-sahih",
+    "ayahs": [
+      {
+        "number": 1,
+        "text": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+      },
+      ...
+    ]
+  }
+}</code></pre>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Features/Skills Section Style -->
+                    <div class="editions-section">
+                        <h4>Available Editions</h4>
+                        <div class="editions-list">
+                            <span class="edition-tag">en-sahih</span>
+                            <span class="edition-tag">id-indonesian</span>
+                            <span class="edition-tag">ar-jalalayn</span>
+                            <span class="edition-tag">fr-hamidullah</span>
+                            <span class="edition-tag">ru-kuliev</span>
+                        </div>
+                        <button id="view-all-editions" class="btn-square-green">View All</button>
+                    </div>
+
+                    <!-- Editions Modal -->
+                    <div id="editions-modal" class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>All Editions</h3>
+                                <button id="close-modal" class="close-btn">&times;</button>
+                            </div>
+                            <input type="text" id="edition-search" class="form-input" placeholder="Search editions..."
+                                style="margin-bottom: 1.5rem;">
+                            <div id="editions-grid" class="editions-grid">
+                                <!-- JS will populate this -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Usage Example Section -->
+                    <div class="list-item" style="border-bottom: none;">
+                        <h3>Usage Example</h3>
+                        <p>Here is a simple example using JavaScript fetch.</p>
+
+                        <div class="endpoint-box" style="margin-bottom: 1.5rem;">
+                            <pre style="margin: 0;"><code><span class="kw">fetch</span>(<span class="str">'https://quran-api.damarcreative.my.id/api/surah/1/id-indonesian'</span>)
+  .<span class="fn">then</span>(res => res.<span class="fn">json</span>())
+  .<span class="fn">then</span>(data => console.<span class="fn">log</span>(data));</code></pre>
+                        </div>
+
+                        <details class="response-dropdown">
+                            <summary>Sample Response (JSON)</summary>
+                            <div class="endpoint-box response-content">
+                                <pre style="margin: 0; white-space: pre-wrap;"><code>{
+  "status": "success",
+  "data": {
+    "surah": 1,
+    "translation": "id-indonesian",
+    "ayahs": [
+      {
+        "number": 1,
+        "text": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."
+      },
+      ...
+    ]
+  }
+}</code></pre>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- API Playground -->
+                    <div class="list-item" style="border-bottom: none; margin-top: 2rem;">
+                        <h3>API Playground</h3>
+                        <p>Test the API directly here.</p>
+
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <input type="text" id="playground-url" class="form-input"
+                                value="https://quran-api.damarcreative.my.id/api/surah" style="flex: 1;">
+                            <button id="playground-send" class="btn-square-green">Send</button>
+                        </div>
+
+                        <div id="playground-output" class="endpoint-box"
+                            style="margin-top: 1rem; min-height: 100px; max-height: 400px; overflow-y: auto; display: none;">
+                            <pre><code id="playground-code"></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="footer-marquee"></footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Cursor logic for this page
+        const cursorOutline = document.querySelector('.cursor-outline');
+        if (cursorOutline) {
+            document.querySelectorAll('a, button, .list-item').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    cursorOutline.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                    cursorOutline.style.borderColor = 'transparent';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+                    cursorOutline.style.backgroundColor = 'transparent';
+                    cursorOutline.style.borderColor = 'var(--text-color)';
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
